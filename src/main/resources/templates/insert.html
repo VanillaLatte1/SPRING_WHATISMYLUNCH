@@ -1,0 +1,22 @@
+{{>layout/header}}
+    <h1>스프링 부트로 시작하는 웹 서비스</h1>
+    <div class="container">
+        <h2>메뉴 입력</h2><br>
+        <form>
+            <div class="form-group">
+                <label for="menu">메뉴 :</label>
+                <input type="text" class="form-control" id="menu" placeholder="메뉴를 입력하세요" name="menu">
+            </div>
+            <div class="form-group">
+                <label for="price">가격 :</label>
+                <input type="number" class="form-control" id="price" placeholder="가격을 입력하세요" name="price">
+            </div>
+            <div class="form-group">
+                <label for="price">이미지 주소 :</label>
+                <input type="text" class="form-control" id="img" placeholder="이미지 주소를 입력하세요" name="img">
+            </div><br>
+            <a href="/" role="button" class="btn btn-secondary">취소</a>
+            <button type="button" class="btn btn-primary" id="btn-save">메뉴 등록</button>
+        </form>
+    </div>
+{{>layout/footer}}

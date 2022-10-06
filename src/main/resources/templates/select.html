@@ -1,0 +1,28 @@
+{{>layout/header}}
+<!-- 목록 출력 영역 -->
+<table class="table table-horizontal table-bordered">
+  <thead class="thead-strong">
+  <tr>
+    <th>메뉴</th>
+    <th>가격</th>
+    <th>img</th>
+  </tr>
+  </thead>
+  <tbody id="tbody">
+
+
+  <p style="display: none">
+    1. {#list} - posts 라는 List를 순회
+    2. {id} 등의 {변수명} - List에서 뽑아낸 객체의 필드를 사용합니다.
+  </p>
+
+  {{#list}}
+  <tr>
+    <td>{{menu}}</td>
+    <td>{{price}}</td>
+    <td><img src = "{{img}}" width="300" height="300"></td>
+  </tr>
+  {{/list}}
+  </tbody>
+</table>
+{{>layout/footer}}
